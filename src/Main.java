@@ -3,19 +3,25 @@ public class Main {
 	public static void main(String[] args){
 		Solution solution = new Solution();
 		
-		TreeNode root = new TreeNode(2);
-		TreeNode rootLeft = new TreeNode(1);
-		TreeNode rootRight = new TreeNode(3);
-		root.left = rootLeft;
-		root.right = rootRight;
-		TreeNode p = new TreeNode(3);
+//		[[2147483647,-1,0,2147483647],[2147483647,2147483647,2147483647,-1],[2147483647,-1,2147483647,-1],[0,-1,2147483647,2147483647]]
+		int[][] input = {{2147483647,-1,0,2147483647}, {2147483647,2147483647,2147483647,-1}, {2147483647,-1,2147483647,-1}, {0,-1,2147483647,2147483647}};
 		
-		TreeNode ans = solution.inorderSuccessor(root, p);
+		for (int i = 0; i < input.length; i++) {
+			for (int j = 0; j < input[i].length; j++) {
+				System.out.print(input[i][j]);
+				System.out.print(" ");
+			}
+			System.out.print("\n");
+		}
 		
-		if (ans == null) {
-			System.out.println("isNULL");
-		} else {
-			System.out.println(ans.val);
+		solution.wallsAndGates(input);
+		
+		for (int i = 0; i < input.length; i++) {
+			for (int j = 0; j < input[i].length; j++) {
+				System.out.print(input[i][j]);
+				System.out.print(" ");
+			}
+			System.out.print("\n");
 		}
 		
 	}
