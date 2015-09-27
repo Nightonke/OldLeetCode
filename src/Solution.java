@@ -1,10 +1,5 @@
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.zip.Inflater;
-
 public class Solution {
-    
-	private static final int INF = 2147483647;
+    private static final int INF = 2147483647;
 	
 	private int[][] m;
 	private int gateNumber;
@@ -14,6 +9,10 @@ public class Solution {
 	private int W, H;
 	
 	public void wallsAndGates(int[][] rooms) {
+		
+		if (rooms.length == 0) {
+		    return;
+		}
 		
 		gates = new int[rooms.length * rooms[0].length][];
 		

@@ -1,5 +1,5 @@
 
-public class Inorder_Successor_in_BST {
+public class _0285_Inorder_Successor_in_BST {
 
 //	Given a binary search tree and a node in it, find the in-order successor of
 //	that node in the BST.

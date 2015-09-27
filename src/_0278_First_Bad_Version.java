@@ -1,5 +1,5 @@
 
-public class First_Bad_Version {
+public class _0278_First_Bad_Version {
 
 //	You are a product manager and currently leading a team to develop a new 
 //	product. Unfortunately, the latest version of your product fails the quality

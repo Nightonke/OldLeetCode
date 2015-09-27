@@ -1,4 +1,4 @@
-public class Walls_and_Gates {
+public class _0286_Walls_and_Gates {
 
 //	You are given a m x n 2D grid initialized with these three possible values.
 //
